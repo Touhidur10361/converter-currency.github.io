@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>
+		Converter
+
+	</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="G:\9& 10\Web\Assignment_2-173-15-10361\style.css">
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js"
+	crossorigin="anonymous"></script>
+	
+
+	<div class="box">
+	<h2 style="background-color:tomato; text-align: center; padding: 10px;"> Currency Converter</h2>
+	<select type="text" name="currency" id="inputCurrency" onchange="fTs()" onclick="fTs()" oninput="fTs()" size="1">
+		<option value="Taka">Bangladeshi Taka</option>
+		<option value="Dollar">US Dollar</option>
+		<option value="Euro">Euro</option>
+		<option value="Rupee">Indian Rupee</option>
+		<option value="Yen">Japanese Yen</option>
+		<option value="Pound">British Pound</option>
+
+		
+
+	</select>
+
+	<input type="number" name="first" onclick="fTs()" oninput="fTs()" id="firstCurrency" onchange="fTs" />
+
+	<br/>
+
+
+	<select type="text" id="outputCurrency" name="outputCurrency" onchange="fTs()"  oninput="fTs">
+		<option value="Taka1">Bangladeshi Taka</option>
+		<option value="Dollar1">US Dollar</option>
+		<option value="Euro1">Euro</option>
+		<option value="Rupee1">Indian Rupee</option>
+		<option value="Yen1">Japanese Yen</option>
+		<option value="Pound1">British Pound</option>
+
+		
+
+	</select>
+	<input type="number" name="second" id="secondCurrency"/>
+
+	<script type="text/javascript">
+		function fTs() {
+var input1=document.getElementById("firstCurrency").value;
+var input2=document.getElementById("secondCurrency").disabled=true;
+if(document.getElementById('inputCurrency').value=='Taka') 
+{
+if(document.getElementById('outputCurrency').value=='Taka1') 
+{
+document.getElementById("secondCurrency").value=input1*1;
+}
+
+if(document.getElementById('outputCurrency').value=='Dollar1') 
+{
+document.getElementById("secondCurrency").value=input1*0.012;
+}
+
+if(document.getElementById('outputCurrency').value=='Euro1') 
+{
+document.getElementById("secondCurrency").value=input1*0.0097;
+}
+
+if(document.getElementById('outputCurrency').value=='Rupee1') 
+{
+document.getElementById("secondCurrency").value=input1*0.86;
+}
+
+if(document.getElementById('outputCurrency').value=='Yen1') 
+{
+document.getElementById("secondCurrency").value=input1*1.29;
+}
+
+if(document.getElementById('outputCurrency').value=='Pound1') 
+{
+document.getElementById("secondCurrency").value=input1*0.0084;
+}
+
+
+
+}
+
+
+
+
+
+
+if(document.getElementById('inputCurrency').value=='Dollar') 
+{
+if(document.getElementById('outputCurrency').value=='Dollar1') 
+{
+document.getElementById("secondCurrency").value=input1*1;
+}
+
+if(document.getElementById('outputCurrency').value=='Taka1') 
+{
+document.getElementById("secondCurrency").value=input1*84.87;
+}
+
+if(document.getElementById('outputCurrency').value=='Euro1') 
+{
+document.getElementById("secondCurrency").value=input1*0.83;
+}
+
+if(document.getElementById('outputCurrency').value=='Rupee1') 
+{
+document.getElementById("secondCurrency").value=input1*73.24;
+}
+
+if(document.getElementById('outputCurrency').value=='Yen1') 
+{
+document.getElementById("secondCurrency").value=input1*109.70;
+}
+
+if(document.getElementById('outputCurrency').value=='Pound1') 
+{
+document.getElementById("secondCurrency").value=input1*0.71;
+}
+
+
+
+}
+
+
+
+if(document.getElementById('inputCurrency').value=='Euro') 
+{
+if(document.getElementById('outputCurrency').value=='Euro1') 
+{
+document.getElementById("secondCurrency").value=input1*1;
+}
+
+if(document.getElementById('outputCurrency').value=='Dollar1') 
+{
+document.getElementById("secondCurrency").value=input1*1.21;
+}
+
+if(document.getElementById('outputCurrency').value=='Taka1') 
+{
+document.getElementById("secondCurrency").value=input1*102.67;
+}
+
+if(document.getElementById('outputCurrency').value=='Rupee1') 
+{
+document.getElementById("secondCurrency").value=input1*88.61;
+}
+
+if(document.getElementById('outputCurrency').value=='Yen1') 
+{
+document.getElementById("secondCurrency").value=input1*132.70;
+}
+
+if(document.getElementById('outputCurrency').value=='Pound1') 
+{
+document.getElementById("secondCurrency").value=input1*0.86;
+}
+
+
+
+}
+
+
+
+
+if(document.getElementById('inputCurrency').value=='Rupee') 
+{
+if(document.getElementById('outputCurrency').value=='Rupee1') 
+{
+document.getElementById("secondCurrency").value=input1*1;
+}
+
+if(document.getElementById('outputCurrency').value=='Dollar1') 
+{
+document.getElementById("secondCurrency").value=input1*0.014;
+}
+
+if(document.getElementById('outputCurrency').value=='Euro1') 
+{
+document.getElementById("secondCurrency").value=input1*0.011;
+}
+
+if(document.getElementById('outputCurrency').value=='Taka1') 
+{
+document.getElementById("secondCurrency").value=input1*1.16;
+}
+
+if(document.getElementById('outputCurrency').value=='Yen1') 
+{
+document.getElementById("secondCurrency").value=input1*1.50;
+}
+
+if(document.getElementById('outputCurrency').value=='Pound1') 
+{
+document.getElementById("secondCurrency").value=input1*0.0097;
+}
+
+
+
+}
+
+
+
+
+if(document.getElementById('inputCurrency').value=='Yen') 
+{
+if(document.getElementById('outputCurrency').value=='Yen1') 
+{
+document.getElementById("secondCurrency").value=input1*1;
+}
+
+if(document.getElementById('outputCurrency').value=='Dollar1') 
+{
+document.getElementById("secondCurrency").value=input1*0.0091;
+}
+
+if(document.getElementById('outputCurrency').value=='Euro1') 
+{
+document.getElementById("secondCurrency").value=input1*0.0075;
+}
+
+if(document.getElementById('outputCurrency').value=='Rupee1') 
+{
+document.getElementById("secondCurrency").value=input1*0.67;
+}
+
+if(document.getElementById('outputCurrency').value=='Taka1') 
+{
+document.getElementById("secondCurrency").value=input1*0.77;
+}
+
+if(document.getElementById('outputCurrency').value=='Pound1') 
+{
+document.getElementById("secondCurrency").value=input1*0.0065;
+}
+
+
+
+}
+
+
+
+
+if(document.getElementById('inputCurrency').value=='Pound') 
+{
+if(document.getElementById('outputCurrency').value=='Pound1') 
+{
+document.getElementById("secondCurrency").value=input1*1;
+}
+
+if(document.getElementById('outputCurrency').value=='Dollar1') 
+{
+document.getElementById("secondCurrency").value=input1*1.41;
+}
+
+if(document.getElementById('outputCurrency').value=='Euro1') 
+{
+document.getElementById("secondCurrency").value=input1*1.17;
+}
+
+if(document.getElementById('outputCurrency').value=='Rupee1') 
+{
+document.getElementById("secondCurrency").value=input1*103.25;
+}
+
+if(document.getElementById('outputCurrency').value=='Yen1') 
+{
+document.getElementById("secondCurrency").value=input1*154.66;
+}
+
+if(document.getElementById('outputCurrency').value=='Taka1') 
+{
+document.getElementById("secondCurrency").value=input1*119.65;
+}
+
+
+
+}
+
+
+
+
+
+
+}
+		
+
+
+
+	</script>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+	<h2 style="background-color:tomato;" class="text">Thank You</h2>
+	</div>
+
+
+
+	<div class="footer">
+    <p><a href="https://touhid-portfolio.000webhostapp.com/Portfolio/index.html#">@Md.Touhidur Rahman</a></p>
+    </div>
+
+  
+
+
+</body>
+</html>
+
